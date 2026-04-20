@@ -1,12 +1,24 @@
 # Coming Soon
 
-Features in active development for the next release.
+Features planned beyond what is already live. **Do not confuse this list with shipped product** — see [Platform Overview](../welcome/platform-overview.md) for current routes and capabilities.
+
+---
+
+## Already in production (reference)
+
+The following exist in the web app today and are **not** “coming soon”:
+
+- Courses, quizzes, dashboard, settings, onboarding (`/onboarding`, `/external-onboarding` as applicable).
+- Certifications with admin **Certification review** (`/admin/certification-review`).
+- **Live streaming**, **live sessions**, **webinars/events** landings, **attendance**, **affiliates** admin, **external invites**.
+- Public pages: **`/webinar`**, **`/evento`**, **`/kids`**, **`/affiliates`**, **`/go`**, **`/altura`**, **`/pricing`**, legal pages.
+- Auth: email, Discord, Whop (`/whop-login`), cookie consent, i18n (EN/ES).
 
 ---
 
 ## Overview
 
-These features are prioritized for MVP Phase 2 and are actively being developed.
+The items below are **future or in-flight enhancements** — timelines change. Treat this page as a direction-of-travel document, not a release calendar.
 
 ---
 

@@ -30,13 +30,18 @@ You have three options to sign up:
 
 After signing up, you'll be prompted to select a plan:
 
-| Plan | Access Level | Price |
+| Plan | Access Level | Notes |
 |------|-------------|-------|
-| Free | Intro videos only | $0 |
-| Community | Full courses + Discord | $67/month |
-| VIP | 1-1 Sessions + Everything | $3,500 |
+| Free | Intro content | $0 — explore before upgrading |
+| Community | Courses + Discord | Recurring membership |
+| VIP | Enhanced access & sessions | See in-app pricing |
+| Concierge | Highest-touch program | Annual / premium tier |
 
-Not sure which plan? Start with **Free** to explore, then upgrade when ready.
+Not sure which plan? Start with **Free** to explore, then upgrade when ready. Pricing on the live site always wins if this table drifts.
+
+{% hint style="info" %}
+**Onboarding:** after sign-up, the app may route you through **`/onboarding`** to finish your profile. Some campaigns use **`/external-onboarding`** for invited users.
+{% endhint %}
 
 ---
 

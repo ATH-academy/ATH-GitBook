@@ -1,74 +1,65 @@
-# Welcome to All Time High Academy
+# All Time High Academy
 
-**Your one-stop platform for crypto education and financial independence.**
-
-All Time High Academy is a comprehensive crypto learning platform designed to take you from complete beginner to certified crypto professional. Whether you're just starting your crypto journey or looking to master advanced trading strategies, we have the resources, community, and expert guidance to help you succeed.
-
----
-
-## What We Offer
-
-### Expert-Led Education
-Learn from industry professionals with years of experience in cryptocurrency trading, DeFi, and blockchain technology. Our curriculum is continuously updated to reflect the latest market developments and opportunities.
-
-### Structured Learning Path
-Progress through carefully designed modules that build upon each other:
-- **Fundamentals** - Understand blockchain, Bitcoin, and core crypto concepts
-- **Trading Strategies** - Master technical analysis and market psychology
-- **DeFi Mastery** - Navigate decentralized finance protocols safely
-- **Portfolio Management** - Build and manage a diversified crypto portfolio
-
-### Professional Certifications
-Earn recognized credentials that demonstrate your expertise:
-- **ATH-CCP** - Certified Crypto Professional
-- **ATH-CDS** - Certified DeFi Specialist
-- **ATH-CMA** - Certified Market Analyst
-
-### Supportive Community
-Join our Discord community for:
-- Weekly live sessions (Tuesdays 7pm)
-- Real-time market discussions
-- Peer support and networking
-- Exclusive insights from our team
+{% hint style="success" %}
+**Crypto education built for real outcomes** — structured courses, certifications, community, and tooling in one place.
+{% endhint %}
 
 ---
 
-## Getting Started
+## What this site is
 
-1. **Create your account** - Sign up using email, Discord, or Whop
-2. **Choose your plan** - Select from Free, Community, VIP, or Concierge tiers
-3. **Start learning** - Begin with our fundamentals course
-4. **Track your progress** - Complete quizzes and earn certifications
+This GitBook space documents **how the product works today**: learning paths, memberships, certifications, public pages (webinars, events, kids), and the admin tooling staff use to run the academy.
 
----
-
-## Membership Tiers
-
-| Plan | Price | Best For |
-|------|-------|----------|
-| **Free** | $0 | Exploring our platform and intro content |
-| **Community** | $67/month | Full course access + Discord community |
-| **VIP** | $3,500 | Personalized 1-1 sessions + complete access |
-| **Concierge** | $12,000/year | Premium in-person guidance + full support |
+| If you want to… | Start here |
+|-----------------|------------|
+| Get productive fast | [Quick Start](welcome/quick-start.md) |
+| See routes & features | [Platform Overview](welcome/platform-overview.md) |
+| Compare plans | [Plan Comparison](membership/plan-comparison.md) |
+| Ship docs to GitBook | [Publishing on GitBook](reference/gitbook-setup.md) |
 
 ---
 
-## Languages
+## Highlights
 
-All Time High Academy is available in:
-- English
-- Spanish (Espanol)
+### Learning & proof
 
-The platform automatically detects your browser language, or you can manually switch using the language selector.
+- Hierarchical **courses** with modules, video (MUX), and sequential unlocks.
+- **Quizzes** with retries and score tracking.
+- **Certification tracks** (ATH-CCP, ATH-CDS, ATH-CMA) with admin review where applicable.
+
+### Community & growth
+
+- **Discord** integration for members.
+- **Webinars** (`/webinar`) and **in-person events** (`/evento`) with dedicated landings.
+- **Affiliate** panel (`/affiliate`) and `?ref=` attribution for partners.
+
+### Product surface
+
+- **Bilingual** UI (English / Spanish).
+- **Dashboard** with progress, calculators, and certification status.
+- **ATH Kids** landing at `/kids`.
+- Marketing landings such as **`/go`** (contact / acquisition) and **`/altura`** (institutional vs personal paths).
 
 ---
 
-## Need Help?
+## Membership at a glance
 
-- Check our [FAQ](support/faq.md) for common questions
-- Visit [Troubleshooting](support/troubleshooting.md) for technical issues
-- [Contact our team](support/contact.md) for personalized support
+| Plan | Best for |
+|------|----------|
+| **Free** | Exploring intro content |
+| **Community** | Full course access + Discord |
+| **VIP** | Deeper support and sessions |
+| **Concierge** | Highest-touch guidance |
+
+Exact pricing and entitlements live in-app on [Pricing](https://alltimehigh.academy/pricing) and in [Choosing Your Plan](getting-started/choosing-plan.md).
 
 ---
 
-*Transform your financial future with All Time High Academy.*
+## Help
+
+- [FAQ](support/faq.md) · [Troubleshooting](support/troubleshooting.md) · [Contact](support/contact.md)
+- [Changelog](CHANGELOG.md) for **documentation** updates (not the application release notes).
+
+---
+
+*All Time High Academy — documentation aligned with the live platform.*

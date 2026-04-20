@@ -2,11 +2,15 @@
 
 Manage courses, modules, and learning content.
 
+{% hint style="warning" %}
+**Sync with the real admin UI:** The live app’s admin area is organized into tabs such as **Learning progress**, **Quiz manager**, **Webinars**, **Attendance**, etc. See [Dashboard Overview](dashboard-overview.md) for the up-to-date list. This page describes **content concepts**; some editorial workflows may happen in the database or tools outside the SPA.
+{% endhint %}
+
 ---
 
 ## Overview
 
-The admin dashboard allows you to create, edit, and publish educational content for All Time High Academy.
+The admin dashboard allows you to create, edit, and publish educational content for All Time High Academy. Operational staff should cross-check with [Dashboard Overview](dashboard-overview.md) for day-to-day screens.
 
 ---
 

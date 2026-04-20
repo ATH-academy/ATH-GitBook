@@ -128,14 +128,30 @@ The platform is fully bilingual:
 
 ## Platform Navigation
 
-### Main Sections
+### Main Sections (authenticated)
 
-| Section | Purpose |
-|---------|---------|
-| **Dashboard** | Your home base - progress, recent activity |
-| **Courses** | Browse and access all courses |
-| **Settings** | Profile, preferences, connections |
-| **Community** | Discord access (when connected) |
+| Section | Route | Purpose |
+|---------|-------|---------|
+| **Dashboard** | `/dashboard` | Progress, recent activity, learning path, certifications |
+| **Courses** | `/courses` | Catalog (auth required for listing) |
+| **Course detail** | `/courses/:slug` | Modules, lessons, quizzes |
+| **Settings** | `/settings` | Profile, language, Discord, preferences |
+| **Admin** | `/admin/:tab` | Staff-only tools (see [Dashboard Overview](../admin/dashboard-overview.md)) |
+| **Affiliate** | `/affiliate` | Partner dashboard |
+
+### Public & marketing pages
+
+| Page | Route | Purpose |
+|------|-------|---------|
+| **Home** | `/` | Marketing home |
+| **Pricing** | `/pricing` | Plans and checkout entry |
+| **Webinars** | `/webinar`, `/webinar/:slug` | Webinar list + registration landings |
+| **Events** | `/evento`, `/evento/:slug` | In-person event landings |
+| **ATH Kids** | `/kids` | Kids program landing |
+| **Affiliates info** | `/affiliates` | Program information |
+| **Go** | `/go` | Contact / acquisition landing |
+| **Altura** | `/altura` | Institutional vs personal paths |
+| **Legal** | `/terms`, `/privacy`, `/community-terms` | Policies |
 
 ### Quick Actions
 - Click your profile icon for account menu
