@@ -1,8 +1,8 @@
 # All Time High Academy
 
-{% hint style="success" %}
-**Crypto education built for real outcomes** — structured courses, certifications, community, and tooling in one place.
-{% endhint %}
+<div class="docsify-callout docsify-callout--success">
+<p><strong>Crypto education built for real outcomes</strong> — structured courses, certifications, community, and tooling in one place.</p>
+</div>
 
 ---
 
@@ -59,6 +59,18 @@ Exact pricing and entitlements live in-app on [Pricing](https://alltimehigh.acad
 
 - [FAQ](support/faq.md) · [Troubleshooting](support/troubleshooting.md) · [Contact](support/contact.md)
 - [Changelog](CHANGELOG.md) for **documentation** updates (not the application release notes).
+
+---
+
+## GitHub Pages (Docsify)
+
+This repository ships a static documentation shell (`index.html`, `sidebar.md`, `.nojekyll`) powered by [Docsify](https://docsify.js.org/). You can host it **only on GitHub** with no build step:
+
+1. In the repo on GitHub: **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**, branch **main**, folder **/** (root).
+3. After the first deploy, the site is available at **https://ath-academy.github.io/ATH-GitBook/** (hash URLs such as `/#/welcome/quick-start`).
+
+Keep **`sidebar.md`** in sync with **`SUMMARY.md`** when you add or rename pages so GitBook and GitHub Pages stay aligned.
 
 ---
 

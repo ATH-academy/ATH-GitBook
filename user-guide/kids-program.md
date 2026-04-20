@@ -17,9 +17,9 @@
 - Share the official link when the program is active in campaigns.
 - Exact behavior (sign-up, age rules, requirements) depends on the current product setup and the legal messaging that applies in your region.
 
-{% hint style="info" %}
-**Parents and guardians:** always review the current terms of use and privacy policy on the main site before signing up minors.
-{% endhint %}
+<div class="docsify-callout docsify-callout--info">
+<p><strong>Parents and guardians:</strong> always review the current terms of use and privacy policy on the main site before signing up minors.</p>
+</div>
 
 ---
 

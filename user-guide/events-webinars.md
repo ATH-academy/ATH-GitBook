@@ -21,9 +21,9 @@ Each **slug** identifies a specific event (for example a campaign or date). The 
 - A registration form or flow depending on how the event is set up.
 - A responsive layout on mobile and desktop.
 
-{% hint style="info" %}
-**Note:** Details for each event (pricing, requirements, language) may vary. Always use the official link shared by the All Time High Academy team.
-{% endhint %}
+<div class="docsify-callout docsify-callout--info">
+<p><strong>Note:</strong> Details for each event (pricing, requirements, language) may vary. Always use the official link shared by the All Time High Academy team.</p>
+</div>
 
 ---
 

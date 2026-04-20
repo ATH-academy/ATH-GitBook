@@ -6,6 +6,7 @@ All notable changes to this documentation space are recorded here. The format fo
 
 ### Added
 
+- GitHub Pages–ready Docsify shell (`index.html`, `sidebar.md`, `.nojekyll`) and publishing notes in `README.md` and `reference/gitbook-setup.md`.
 - Changelog and versioning for the documentation repository.
 - Reference guide for publishing this repo on GitBook (`reference/gitbook-setup.md`).
 - User guides aligned with the live platform: events & webinars (`/webinar`, `/evento`), affiliates (`/affiliate`, `/affiliates`), and ATH Kids (`/kids`).

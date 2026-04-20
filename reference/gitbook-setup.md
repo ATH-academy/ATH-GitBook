@@ -2,9 +2,9 @@
 
 This guide explains how to connect the `ATH-GitBook` repository to GitBook so you get a published site with **sidebar navigation**, **search**, **branding**, and optional custom domain.
 
-{% hint style="info" %}
-**Prefer Spanish?** The steps are the same; GitBook’s UI can be set to your account language. The important part is syncing this GitHub repo to a Space.
-{% endhint %}
+<div class="docsify-callout docsify-callout--info">
+<p><strong>Prefer Spanish?</strong> The steps are the same; GitBook’s UI can be set to your account language. The important part is syncing this GitHub repo to a Space.</p>
+</div>
 
 ---
 
@@ -16,9 +16,25 @@ This guide explains how to connect the `ATH-GitBook` repository to GitBook so yo
 | `README.md` | Home page (usually the first item under Welcome). |
 | Other `*.md` files | Pages; paths in `SUMMARY.md` must match real file paths. |
 
-{% hint style="info" %}
-**Tip:** To change the menu, edit `SUMMARY.md` only. Section titles use `##` and pages use `* [Label](path/to/file.md)`.
-{% endhint %}
+<div class="docsify-callout docsify-callout--info">
+<p><strong>Tip:</strong> To change the menu, edit <code>SUMMARY.md</code> only. Section titles use <code>##</code> and pages use <code>* [Label](path/to/file.md)</code>.</p>
+</div>
+
+---
+
+## Alternative: GitHub Pages (no GitBook account)
+
+If you want a public docs site **without** GitBook, this repo includes a [Docsify](https://docsify.js.org/) setup:
+
+| File | Role |
+|------|------|
+| `index.html` | Loads Docsify, search, and theme overrides. |
+| `sidebar.md` | Left navigation (mirror `SUMMARY.md` when you change the IA). |
+| `.nojekyll` | Tells GitHub Pages not to run Jekyll (so paths and assets behave predictably). |
+
+**Enable Pages:** GitHub → **Settings → Pages →** branch **main**, folder **/**. The default URL is `https://ath-academy.github.io/ATH-GitBook/`.
+
+GitBook-specific blocks such as `{% hint %}` are replaced with plain HTML callout `<div>`s so the same Markdown renders on both GitBook and GitHub Pages.
 
 ---
 

@@ -25,9 +25,9 @@ The app can store an affiliate code when someone arrives with a **`?ref=CODE`** 
 https://alltimehigh.academy/?ref=YOUR_CODE
 ```
 
-{% hint style="warning" %}
-**Important:** Use only codes assigned to you by the team. Incorrect links will not record commissions.
-{% endhint %}
+<div class="docsify-callout docsify-callout--warning">
+<p><strong>Important:</strong> Use only codes assigned to you by the team. Incorrect links will not record commissions.</p>
+</div>
 
 ---
 

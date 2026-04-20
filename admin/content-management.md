@@ -2,9 +2,9 @@
 
 Manage courses, modules, and learning content.
 
-{% hint style="warning" %}
-**Sync with the real admin UI:** The live app’s admin area is organized into tabs such as **Learning progress**, **Quiz manager**, **Webinars**, **Attendance**, etc. See [Dashboard Overview](dashboard-overview.md) for the up-to-date list. This page describes **content concepts**; some editorial workflows may happen in the database or tools outside the SPA.
-{% endhint %}
+<div class="docsify-callout docsify-callout--warning">
+<p><strong>Sync with the real admin UI:</strong> The live app’s admin area is organized into tabs such as <strong>Learning progress</strong>, <strong>Quiz manager</strong>, <strong>Webinars</strong>, <strong>Attendance</strong>, etc. See <a href="dashboard-overview.md">Dashboard Overview</a> for the up-to-date list. This page describes <strong>content concepts</strong>; some editorial workflows may happen in the database or tools outside the SPA.</p>
+</div>
 
 ---
 

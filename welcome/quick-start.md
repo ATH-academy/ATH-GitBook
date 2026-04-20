@@ -39,9 +39,9 @@ After signing up, you'll be prompted to select a plan:
 
 Not sure which plan? Start with **Free** to explore, then upgrade when ready. Pricing on the live site always wins if this table drifts.
 
-{% hint style="info" %}
-**Onboarding:** after sign-up, the app may route you through **`/onboarding`** to finish your profile. Some campaigns use **`/external-onboarding`** for invited users.
-{% endhint %}
+<div class="docsify-callout docsify-callout--info">
+<p><strong>Onboarding:</strong> after sign-up, the app may route you through <strong><code>/onboarding</code></strong> to finish your profile. Some campaigns use <strong><code>/external-onboarding</code></strong> for invited users.</p>
+</div>
 
 ---
 
