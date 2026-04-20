@@ -7,6 +7,7 @@
   <meta name="description" content="All Time High Academy — product documentation: courses, memberships, certifications, and admin tools." />
   <meta name="theme-color" content="#050708" />
   <title>ATH Academy — Documentation</title>
+  <link rel="icon" type="image/png" href="images/ath-logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
@@ -86,7 +87,7 @@
       z-index: 40;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       padding: 0 1rem 0 1.1rem;
       background: linear-gradient(180deg, rgba(5, 7, 8, 0.92) 0%, rgba(8, 14, 16, 0.88) 100%);
       backdrop-filter: blur(12px);
@@ -108,22 +109,18 @@
 
     .ath-masthead__brand {
       display: flex;
-      align-items: baseline;
-      gap: 0.5rem;
+      align-items: center;
+      gap: 0.65rem;
       text-decoration: none;
       color: inherit;
     }
 
-    .ath-masthead__mark {
-      font-family: Fraunces, Georgia, serif;
-      font-weight: 700;
-      font-size: 1.2rem;
-      letter-spacing: -0.03em;
-      background: linear-gradient(92deg, #00b896 0%, var(--ath-mint) 45%, #5fffd1 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 0 0 32px var(--ath-glow);
+    .ath-masthead__logo {
+      display: block;
+      height: 2rem;
+      width: auto;
+      max-width: 7.5rem;
+      object-fit: contain;
     }
 
     .ath-masthead__title {
@@ -134,52 +131,8 @@
       text-transform: uppercase;
     }
 
-    .ath-masthead__actions {
-      display: flex;
-      align-items: center;
-      gap: 0.65rem;
-    }
-
-    .ath-masthead__link {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--ath-muted);
-      text-decoration: none;
-      padding: 0.35rem 0.65rem;
-      border-radius: 6px;
-      border: 1px solid transparent;
-      transition: color 0.15s, border-color 0.15s, background 0.15s;
-    }
-
-    .ath-masthead__link:hover {
-      color: var(--ath-mint);
-      border-color: var(--ath-border);
-      background: var(--ath-mint-dim);
-    }
-
-    .ath-masthead__link--primary {
-      color: var(--ath-bg-deep);
-      background: linear-gradient(92deg, #00b896 0%, var(--ath-mint) 50%, #5fffd1 100%);
-      border: none;
-    }
-
-    .ath-masthead__link--primary:hover {
-      color: var(--ath-bg-deep);
-      filter: brightness(1.08);
-      box-shadow: 0 0 20px rgba(0, 255, 167, 0.35);
-    }
-
     #app {
       padding-top: var(--ath-masthead-h);
-    }
-
-    .github-corner svg {
-      fill: var(--ath-mint);
-      color: var(--ath-bg-deep);
-    }
-
-    .github-corner {
-      z-index: 45;
     }
 
     .sidebar {
@@ -365,13 +318,15 @@
 <body>
   <header class="ath-masthead" role="banner">
     <a class="ath-masthead__brand" href="#/" title="Documentation home">
-      <span class="ath-masthead__mark">ATH</span>
+      <img
+        class="ath-masthead__logo"
+        src="images/ath-logo.png"
+        width="120"
+        height="40"
+        alt="All Time High Academy"
+      />
       <span class="ath-masthead__title">Academy Docs</span>
     </a>
-    <nav class="ath-masthead__actions" aria-label="External links">
-      <a class="ath-masthead__link" href="https://alltimehigh.academy" target="_blank" rel="noopener noreferrer">Platform</a>
-      <a class="ath-masthead__link ath-masthead__link--primary" href="https://alltimehigh.academy/pricing" target="_blank" rel="noopener noreferrer">Pricing</a>
-    </nav>
   </header>
   <div id="app"></div>
   <script>
@@ -386,7 +341,6 @@
 
     window.$docsify = Object.assign(window.$docsify || {}, {
       name: "All Time High Academy",
-      repo: "ATH-academy/ATH-GitBook",
       loadSidebar: "sidebar.md",
       homepage: "README.md",
       auto2top: true,
