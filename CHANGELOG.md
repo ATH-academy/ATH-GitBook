@@ -6,6 +6,7 @@ All notable changes to this documentation space are recorded here. The format fo
 
 ### Added
 
+- GitHub Actions workflow (`.github/workflows/pages.yml`) to deploy static Pages when branch-based publishing is unreliable, plus `404.html` (copy of `index.html`) for GitHub Pages SPA fallback.
 - GitHub Pages–ready Docsify shell (`index.html`, `sidebar.md`, `.nojekyll`) and publishing notes in `README.md` and `reference/gitbook-setup.md`.
 - Changelog and versioning for the documentation repository.
 - Reference guide for publishing this repo on GitBook (`reference/gitbook-setup.md`).

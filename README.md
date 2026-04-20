@@ -64,11 +64,18 @@ Exact pricing and entitlements live in-app on [Pricing](https://alltimehigh.acad
 
 ## GitHub Pages (Docsify)
 
-This repository ships a static documentation shell (`index.html`, `sidebar.md`, `.nojekyll`) powered by [Docsify](https://docsify.js.org/). You can host it **only on GitHub** with no build step:
+This repository ships a static documentation shell (`index.html`, `404.html`, `sidebar.md`, `.nojekyll`) powered by [Docsify](https://docsify.js.org/). You can host it **only on GitHub** with no build step.
 
-1. In the repo on GitHub: **Settings → Pages**.
-2. Under **Build and deployment**, set **Source** to **Deploy from a branch**, branch **main**, folder **/** (root).
-3. After the first deploy, the site is available at **https://ath-academy.github.io/ATH-GitBook/** (hash URLs such as `/#/welcome/quick-start`).
+**Recommended (fixes many “404” cases): GitHub Actions**
+
+1. Push `main` including `.github/workflows/pages.yml`.
+2. **Settings → Pages → Build and deployment → Source:** **GitHub Actions** (not “Deploy from a branch” unless you know that path works for this org).
+3. Open the **Actions** tab and confirm the **Deploy GitHub Pages** workflow run succeeds (approve it once if the org asks).
+4. The site URL is **https://ath-academy.github.io/ATH-GitBook/** — use hash routes such as `/#/welcome/quick-start`.
+
+**Alternative:** **Settings → Pages →** Source **Deploy from a branch**, branch **main**, folder **/** (root).
+
+If the root URL still returns **404**, the Pages source is usually wrong, the workflow has not run yet, or an org policy blocks Pages—use Actions + a green workflow run as the checklist.
 
 Keep **`sidebar.md`** in sync with **`SUMMARY.md`** when you add or rename pages so GitBook and GitHub Pages stay aligned.
 

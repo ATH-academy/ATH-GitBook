@@ -29,10 +29,12 @@ If you want a public docs site **without** GitBook, this repo includes a [Docsif
 | File | Role |
 |------|------|
 | `index.html` | Loads Docsify, search, and theme overrides. |
+| `404.html` | Same shell as `index.html` so GitHub Pages can serve the app on unknown paths (optional but helps deep links). |
 | `sidebar.md` | Left navigation (mirror `SUMMARY.md` when you change the IA). |
 | `.nojekyll` | Tells GitHub Pages not to run Jekyll (so paths and assets behave predictably). |
+| `.github/workflows/pages.yml` | Deploys the repo root to Pages via **GitHub Actions** (use this if **Settings → Pages** with “branch” still shows **404**). |
 
-**Enable Pages:** GitHub → **Settings → Pages →** branch **main**, folder **/**. The default URL is `https://ath-academy.github.io/ATH-GitBook/`.
+**Enable Pages:** GitHub → **Settings → Pages → Build and deployment → Source:** prefer **GitHub Actions** (after merging the workflow), then run **Actions → Deploy GitHub Pages** once and approve if prompted. Alternative: **Deploy from a branch**, branch **main**, folder **/**. The default URL is `https://ath-academy.github.io/ATH-GitBook/`. If you see **404** at that URL, the deployment has not completed, the source is not **Actions** or **main/root**, or an org policy is blocking Pages.
 
 GitBook-specific blocks such as `{% hint %}` are replaced with plain HTML callout `<div>`s so the same Markdown renders on both GitBook and GitHub Pages.
 
