@@ -37,8 +37,10 @@
 * [Content Management](admin/content-management.md)
 * [Quiz Management](admin/quiz-management.md)
 * [User Management](admin/user-management.md)
+* [Lead Manager](admin/lead-manager.md)
 * [Analytics & Reporting](admin/analytics.md)
 * [Certification Review](admin/certification-review.md)
+* [OTC Desk KYC](admin/otc-kyc.md)
 
 ## Technical Documentation
 

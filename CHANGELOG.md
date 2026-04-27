@@ -6,6 +6,8 @@ All notable changes to this documentation space are recorded here. The format fo
 
 ### Added
 
+- Admin docs for **Lead Manager** (`/admin/leads`) covering the unified `crm_leads` pipeline and stages.
+- Admin docs for **OTC Desk KYC** (`/admin/otc-kyc`) covering submission review, statuses, and private document downloads via signed URLs.
 - GitHub Actions workflow (`.github/workflows/pages.yml`) to deploy static Pages when branch-based publishing is unreliable, plus `404.html` (copy of `index.html`) for GitHub Pages SPA fallback.
 - GitHub Pages–ready Docsify shell (`index.html`, `sidebar.md`, `.nojekyll`) and publishing notes in `README.md` and `reference/gitbook-setup.md`.
 - Changelog and versioning for the documentation repository.
