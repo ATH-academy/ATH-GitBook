@@ -7,7 +7,7 @@ The **Lead Manager** is the staff-facing pipeline for reviewing and organizing i
 ## Where it lives
 
 - **Route**: `/admin/leads`
-- **Who can access**: staff roles (admins + operations)
+- **Who can access**: admins and operations staff
 
 ---
 
@@ -19,7 +19,7 @@ Leads are unified into a single table called `crm_leads`, which can be populated
 - `affiliate_leads` (affiliate program lead capture)
 - `manual_import` (staff-added records; optional)
 
-Each CRM row keeps the best available **name**, **email**, **phone**, and a JSON `metadata` payload with source details.
+Each CRM row keeps the best available **name**, **email**, **phone**, and a JSON `metadata` payload with source details. The admin UI loads the most recent **800** rows ordered by `created_at`.
 
 ---
 
@@ -34,6 +34,41 @@ The pipeline stage is stored on each lead as `stage`:
 | `ath_member` | Converted to member/customer |
 
 Operators typically move leads through these stages as outreach progresses.
+
+---
+
+## Dashboard header
+
+Four stat cards summarize the loaded dataset:
+
+- **Total** — all CRM rows in the current fetch
+- **Leads** — count in stage `lead`
+- **Qualified** — count in stage `qualified`
+- **ATH members** — count in stage `ath_member`
+
+---
+
+## Working the queue
+
+### Stage tabs
+
+Filter the main workspace by stage. Tabs show live counts: **Leads**, **Qualified**, **ATH members**, and **All**.
+
+### Layout modes
+
+| Mode | Behavior |
+|------|----------|
+| **Stages** | Kanban board (`CrmLeadsKanban`) across all stages; search and origin filters still apply |
+| **List** | Tabular view for the active stage tab with pagination |
+
+### Search and filters
+
+- **Search** — name, email, phone, `stage`, `source_system`, and `source`
+- **Origin filter** — webinar, event, contact form, free course, or other (derived from the `source` field)
+
+### List pagination
+
+In list mode, choose **25**, **50**, or **100** rows per page. The footer shows the visible range and total matching rows.
 
 ---
 
@@ -56,8 +91,9 @@ The UI recognizes common origin keys such as:
 - `evento`
 - `home-contact`
 - `free_course`
+- `other` (anything else)
 
-For webinars/events, the lead metadata can include a snapshot title or landing path so staff can quickly identify the campaign the lead came from.
+For webinars and events, cards can show extra detail from `metadata` (for example `webinar_title_snapshot`, `landing_path`, or `webinar_id` captured at signup).
 
 ---
 
@@ -65,9 +101,12 @@ For webinars/events, the lead metadata can include a snapshot title or landing p
 
 Typical operator workflow:
 
-- **Search and filter** leads by name/email/phone/source.
-- **Update stage** as the lead progresses (lead → qualified → member).
-- **Export to CSV** for reporting or external outreach tooling.
+- **Move stage** — drag on the kanban or update in list view (optimistic UI with server persistence on `crm_leads.stage`)
+- **Copy** email or phone from a card
+- **Export (Excel columns)** — CSV with name, phone, and email for the active stage tab (Spanish or English headers based on UI language)
+- **Export (full)** — CSV of the current filtered set including `created_at`, contact fields, `stage`, `source_system`, and `source`
+
+Lead import from this screen is **not** supported; the manager is export- and stage-update-focused.
 
 ---
 
@@ -75,4 +114,4 @@ Typical operator workflow:
 
 - [Webinars & in-person events](../user-guide/events-webinars.md)
 - [Affiliate program](../user-guide/affiliates.md)
-
+- [Affiliates manager](affiliates-manager.md)

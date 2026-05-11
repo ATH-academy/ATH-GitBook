@@ -1,56 +1,66 @@
-# Panel de administración (visión general)
+# Admin dashboard overview
 
-El panel de administración es una consola basada en **pestañas** bajo la ruta `/admin/:tab`. Lo que ves depende de tu **rol** (administrador completo, operaciones, o moderador vinculado a Discord).
-
----
-
-## Cómo entrar
-
-1. Inicia sesión con una cuenta que tenga permisos de staff.
-2. Navega a **`/admin`** — se redirige a la sección por defecto según tu rol.
+The admin dashboard is a **tab-based** console at `/admin/:tab`. What you see depends on your **role** (full admin, operations, or Discord-linked moderator).
 
 ---
 
-## Secciones (implementadas en la app)
+## How to access
 
-### Aprendizaje
-
-| Pestaña | Propósito |
-|---------|-----------|
-| **Learning progress** | Seguimiento de progreso y finalización por estudiantes. |
-| **Quiz progress** | Rendimiento en cuestionarios. |
-| **Quiz manager** | Creación y mantenimiento de bancos de preguntas. |
-| **Certification review** | Cola de candidatos a certificación; aprobación o rechazo. |
-
-### Operaciones
-
-| Pestaña | Propósito |
-|---------|-----------|
-| **Live streaming** | Gestión de transmisiones en vivo y estado de publicación. |
-| **Live sessions** | Calendario y líneas de tiempo de sesiones en cohorte. |
-| **Webinar/Event** | Landings de webinars y eventos presenciales, countdowns y exportación de leads. |
-| **Attendance** | Estadísticas y registros de asistencia. |
-
-### Marketing y comunidad
-
-| Pestaña | Propósito |
-|---------|-----------|
-| **Affiliates** | Revisión de leads, aprobación de ventas y pagos a afiliados. |
-| **External invites** | Enlaces de onboarding externos e invitaciones promocionales (p. ej. Whop). |
+1. Sign in with a staff account.
+2. Go to **`/admin`** — you are redirected to the default section for your role.
 
 ---
 
-## Roles restringidos
+## Sections (implemented in the app)
 
-- **Moderador (solo Discord):** suele ver únicamente **Live streaming** u otras secciones acordadas.
-- **Operaciones:** conjunto enfocado en **Webinars**, **Live streaming** y **Affiliates** (según configuración).
+### Learning
 
-Si necesitas acceso adicional, debe otorgarlo un administrador del equipo.
+| Tab | Purpose |
+|-----|---------|
+| **Learning progress** | Track student progress and completion. |
+| **Quiz progress** | Quiz performance across learners. |
+| **Quiz manager** | Create and maintain question banks. |
+| **Certification review** | Certification queue; approve or reject candidates. |
+
+### Operations
+
+| Tab | Purpose |
+|-----|---------|
+| **Live streaming** | Manage live streams and publishing status. |
+| **Live sessions** | Cohort session calendar and timelines. |
+| **Webinar/Event** | Webinar and in-person event landings, countdowns, and lead exports. |
+| **Attendance** | Attendance stats and records. |
+| **Leads** | Unified `crm_leads` pipeline: stages, kanban/list views, filters, and export. See [Lead Manager](lead-manager.md). |
+
+### Marketing and community
+
+| Tab | Purpose |
+|-----|---------|
+| **Affiliates** | Affiliate leads, commission rules, monthly withdrawals, and history. See [Affiliates Manager](affiliates-manager.md). |
+| **External invites** | External onboarding links and promotional invites (e.g. Whop). |
+
+### OTC Desk
+
+| Tab | Purpose |
+|-----|---------|
+| **KYC** | Review customer submissions and documents. See [OTC Desk KYC](otc-kyc.md). |
+| **Operations** | OTC trade operations (coming soon). |
+
+Customers complete verification at **`/kyc`**. See [OTC Desk KYC (customer)](../user-guide/kyc-onboarding.md).
 
 ---
 
-## Documentación relacionada
+## Restricted roles
+
+- **Discord moderator:** usually **Live streaming** only, or other sections agreed with the team.
+- **Operations:** focused on **Webinars**, **Live streaming**, **Leads**, **Affiliates**, and **OTC Desk KYC** (per configuration).
+
+Ask a team admin if you need additional access.
+
+---
+
+## Related documentation
 
 - [Certification review](certification-review.md)
 - [Quiz management](quiz-management.md)
-- [Content management](content-management.md) (nota: el catálogo de cursos puede gestionarse fuera de estas pantallas)
+- [Content management](content-management.md) (course catalog may be managed outside these screens)

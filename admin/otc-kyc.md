@@ -66,5 +66,6 @@ Typical flow:
 
 ## Related docs
 
+- [OTC Desk KYC (customer)](../user-guide/kyc-onboarding.md)
 - [Admin dashboard overview](dashboard-overview.md)
 

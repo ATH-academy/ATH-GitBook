@@ -21,6 +21,7 @@
 * [Dashboard Features](user-guide/dashboard.md)
 * [Webinars & Events](user-guide/events-webinars.md)
 * [Affiliate Program](user-guide/affiliates.md)
+* [OTC Desk KYC](user-guide/kyc-onboarding.md)
 * [ATH Kids](user-guide/kids-program.md)
 
 ## Membership Plans
@@ -38,6 +39,7 @@
 * [Quiz Management](admin/quiz-management.md)
 * [User Management](admin/user-management.md)
 * [Lead Manager](admin/lead-manager.md)
+* [Affiliates Manager](admin/affiliates-manager.md)
 * [Analytics & Reporting](admin/analytics.md)
 * [Certification Review](admin/certification-review.md)
 * [OTC Desk KYC](admin/otc-kyc.md)
