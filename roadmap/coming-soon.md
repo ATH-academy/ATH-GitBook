@@ -13,46 +13,13 @@ The following exist in the web app today and are **not** “coming soon”:
 - **Live streaming**, **live sessions**, **webinars/events** landings, **attendance**, **affiliates** admin, **external invites**.
 - Public pages: **`/webinar`**, **`/evento`**, **`/kids`**, **`/affiliates`**, **`/go`**, **`/altura`**, **`/pricing`**, legal pages.
 - Auth: email, Discord, Whop (`/whop-login`), cookie consent, i18n (EN/ES).
+- **Portfolio Tracker** on the dashboard (`/dashboard/portfolio`) — read-only on-chain wallets, P&L, allocation heatmap, holdings table (CoinStats). See [Portfolio Tracker](../user-guide/portfolio-tracker.md).
 
 ---
 
 ## Overview
 
 The items below are **future or in-flight enhancements** — timelines change. Treat this page as a direction-of-travel document, not a release calendar.
-
----
-
-## Portfolio Tracker
-
-### What It Does
-Connect your crypto wallets and exchanges to view your complete portfolio in one place.
-
-### Features
-
-| Feature | Description |
-|---------|-------------|
-| Wallet Connection | Connect via WalletConnect |
-| Exchange Sync | Import from Binance, Coinbase |
-| Holdings View | See all assets in one place |
-| P&L Tracking | Realized and unrealized gains |
-| Performance Charts | Historical portfolio value |
-
-### How It Will Work
-
-1. Connect your wallets/exchanges
-2. System imports transaction history
-3. Calculate cost basis automatically
-4. Track performance over time
-5. View insights and analytics
-
-### Data Displayed
-
-- Current holdings by asset
-- Cost basis per coin
-- Unrealized P&L
-- Realized P&L
-- Best/worst performers
-- Asset allocation breakdown
 
 ---
 
@@ -241,13 +208,13 @@ Take notes and bookmark lessons for later reference.
 
 | Priority | Feature | Status |
 |----------|---------|--------|
-| 1 | Portfolio Tracker | In Development |
-| 2 | Price Alerts | In Development |
-| 3 | Take Profit Alerts | Planned |
-| 4 | Market Indicators | Planned |
-| 5 | Notes & Bookmarks | Planned |
-| 6 | Enhanced Notifications | Planned |
-| 7 | Mobile PWA | Planned |
+| 1 | Price Alerts | In Development |
+| 2 | Take Profit Alerts | Planned |
+| 3 | Market Indicators | Planned |
+| 4 | Notes & Bookmarks | Planned |
+| 5 | Enhanced Notifications | Planned |
+| 6 | Mobile PWA | Planned |
+| — | Portfolio Tracker (on-chain wallets) | **Shipped** — see [user guide](../user-guide/portfolio-tracker.md) |
 
 ### Release Approach
 

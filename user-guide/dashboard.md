@@ -109,6 +109,29 @@ A powerful tool to project your crypto investment growth.
 
 ---
 
+## Portfolio Tracker
+
+Track on-chain wallets in one place: total value, P&L, allocation heatmap, and a holdings table. Connection is **read-only** (public addresses only) and powered by CoinStats.
+
+### Access
+
+- **URL:** `/dashboard/portfolio`
+- **Requirement:** Active membership (same as the main dashboard)
+- The Portfolio tab may be hidden from the tab bar during rollout — use the URL above if you do not see a tab.
+
+### At a glance
+
+| Area | What you see |
+|------|----------------|
+| Wallets | Up to 5 addresses with optional labels and sync status |
+| Summary | Total value, all-time P&L, unrealized P&L, asset count |
+| Allocation | Heatmap sized by weight, colored by 24h change |
+| Holdings | Table of assets with price, value, and allocation |
+
+For step-by-step setup, security notes, and troubleshooting, see the dedicated [Portfolio Tracker guide](portfolio-tracker.md).
+
+---
+
 ## Quick Actions
 
 ### Available Actions
@@ -255,12 +278,6 @@ From dashboard sidebar or navigation:
 
 ### Coming Soon to Dashboard
 
-**Portfolio Tracker**
-- Connect wallets
-- View holdings
-- Track performance
-- P&L analysis
-
 **Price Alerts**
 - Set target prices
 - Multi-channel notifications
@@ -315,6 +332,7 @@ From dashboard sidebar or navigation:
 
 ## Next Steps
 
+- Connect wallets in the [Portfolio Tracker](portfolio-tracker.md)
 - Explore [Course Navigation](course-navigation.md)
 - Track your [Progress](progress-tracking.md)
 - Take [Quizzes](quizzes.md)
