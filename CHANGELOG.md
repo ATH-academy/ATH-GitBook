@@ -6,6 +6,10 @@ All notable changes to this documentation space are recorded here. The format fo
 
 ### Added
 
+- User guide for **OTC Desk KYC** (`/kyc`): session onboarding, verification steps, submission statuses, and WhatsApp help.
+- Admin guide for **Affiliates Manager** (`/admin/affiliates`): commission settings, tier ladder, lead conversion, payouts, and withdrawals.
+- Admin docs for **Lead Manager** (`/admin/leads`) covering the unified `crm_leads` pipeline and stages.
+- Admin docs for **OTC Desk KYC** (`/admin/otc-kyc`) covering submission review, statuses, and private document downloads via signed URLs.
 - GitHub Actions workflow (`.github/workflows/pages.yml`) to deploy static Pages when branch-based publishing is unreliable, plus `404.html` (copy of `index.html`) for GitHub Pages SPA fallback.
 - GitHub Pages–ready Docsify shell (`index.html`, `sidebar.md`, `.nojekyll`) and publishing notes in `README.md` and `reference/gitbook-setup.md`.
 - Changelog and versioning for the documentation repository.
@@ -15,6 +19,7 @@ All notable changes to this documentation space are recorded here. The format fo
 
 ### Changed
 
+- **Lead Manager** admin doc expanded for kanban/list layouts, filters, pagination, and CSV exports aligned with the current admin UI.
 - Welcome and platform overview refreshed to match current product routes and capabilities.
 - Roadmap page clarified so “coming soon” items are not confused with features already live in the app.
 - `SUMMARY.md` reorganized with a **Reference** group (changelog + GitBook publishing).
