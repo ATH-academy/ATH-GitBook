@@ -19,6 +19,7 @@
 * [Quizzes & Assessments](user-guide/quizzes.md)
 * [Certifications](user-guide/certifications.md)
 * [Dashboard Features](user-guide/dashboard.md)
+* [Portfolio Tracker](user-guide/portfolio-tracker.md)
 * [Webinars & Events](user-guide/events-webinars.md)
 * [Affiliate Program](user-guide/affiliates.md)
 * [OTC Desk KYC](user-guide/kyc-onboarding.md)
