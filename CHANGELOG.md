@@ -19,7 +19,8 @@ All notable changes to this documentation space are recorded here. The format fo
 
 ### Changed
 
-- **Lead Manager** admin doc expanded for kanban/list layouts, filters, pagination, and CSV exports aligned with the current admin UI.
+- **Lead Manager** admin doc rewritten for multi-source CRM (`crm_lead_sources`), full pipeline stages, kanban/list UX, lead detail profile RPC, appointments, activity events, and Webinars `crm_stage` integration.
+- **Affiliates Manager** admin doc updated with CRM linkage and dual-write conversion notes cross-linked to Lead Manager.
 - Welcome and platform overview refreshed to match current product routes and capabilities.
 - Roadmap page clarified so “coming soon” items are not confused with features already live in the app.
 - `SUMMARY.md` reorganized with a **Reference** group (changelog + GitBook publishing).

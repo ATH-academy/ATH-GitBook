@@ -85,6 +85,14 @@ Affiliate leads use `affiliate_leads.status`:
 
 Staff can also update status directly (for example mark **Invalid**) without converting.
 
+### CRM linkage (Lead Manager)
+
+Affiliate leads are also synced into the unified **`crm_leads`** pipeline. From the Affiliates Manager lead detail dialog, staff see **linked touchpoints** (same `get_crm_lead_profile` RPC as [Lead Manager](lead-manager.md)).
+
+- Changing CRM stage from either admin view can update linked `affiliate_leads.status` (except `paid`, `invalid`, `duplicate`).
+- Converting to **ATH member** dual-writes affiliate conversion and CRM member conversion.
+- Deep link to a partner’s leads tab: `/admin/affiliates?section=leads&affiliate={affiliate_account_id}`
+
 ---
 
 ## Payouts tab
